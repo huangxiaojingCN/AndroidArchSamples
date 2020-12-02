@@ -30,10 +30,23 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation deps.app_compat
+    implementation deps.material
+
+    // 架构组件
+    implementation deps.lifecycle.runtime
+    annotationProcessor deps.lifecycle.compiler
+    implementation deps.room.runtime
+    annotationProcessor deps.room.compiler
+    implementation deps.room.rxjava2
+
+    // RxJava
+    implementation deps.rxjava2
+    implementation deps.rx_android
+
+    implementation deps.constraintlayout
+
+    // Test
+    testImplementation deps.junit
+    androidTestImplementation deps.espresso.core
 }
