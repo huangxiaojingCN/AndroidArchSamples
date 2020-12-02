@@ -17,10 +17,10 @@ versions.espresso = "3.3.0"
 ext.versions = versions
 
 def build_versions = [:]
-build_versions.min_sdk = 14
-build_versions.compile_sdk = 29
-build_versions.target_sdk = 29
-build_versions.build_tools = "29.0.3"
+build_versions.min_sdk = 16
+build_versions.compile_sdk = 30
+build_versions.target_sdk = 30
+build_versions.build_tools = "30.0.2"
 ext.build_versions = build_versions
 
 def deps = [:]
