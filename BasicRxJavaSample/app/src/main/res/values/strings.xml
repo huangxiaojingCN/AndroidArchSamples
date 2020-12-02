@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BasicRxjavaSample</string>
+    <string name="input_text">输入代办事项</string>
+    <string name="save_item">添加事项</string>
 </resources>
